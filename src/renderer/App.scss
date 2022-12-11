@@ -1,0 +1,18 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+ :not(input):not(textarea),
+ :not(input):not(textarea)::after,
+ :not(input):not(textarea)::before {
+     -webkit-user-select: none;
+     user-select: none;
+     cursor: default;
+ }
+ input, button, textarea, :focus {
+     outline: none; // You should add some other style for :focus to help UX/a11y
+ }
+.links:hover {
+  cursor: pointer;
+}
+@import "~bootstrap/scss/bootstrap";
